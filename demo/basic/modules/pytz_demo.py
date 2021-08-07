@@ -22,8 +22,12 @@ def findCountryCodebyPattern(pattern: str) -> list:
 def getCountryName(code):
     if code in pytz.country_names: return pytz.country_names[code]
 
-def getAllCountryName():
-    for code in pytz.country_names: print(code.center(30), pytz.country_names[code] )
+def getAllCountryName() -> list:
+    result = list()
+    for code in pytz.country_names:
+        print(code.center(30), pytz.country_names[code] )
+        result.append(code.center(30) + pytz.country_names[code] )
+    return result
 
 def findtzbyCountryCode(code: str) -> list:
     if code in pytz.country_names.keys():
@@ -76,6 +80,7 @@ def prg2():
 
 # Execution
 #prg1()
+print(getAllCountryName())
 print(swapDict(pytz.country_names))
 prg2()
 
