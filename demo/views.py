@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from basic.modules import pytz_demo
+#from basic.modules import pytz_demo
 
 def hello(request):
     courses = [
@@ -10,8 +10,8 @@ def hello(request):
     ]
     return render(request, 'demo/welcome.html', {
         'show': True,
-        'courses' : courses,
-        'all_timezone': pytz_demo.findAlltz()
+        'courses' : courses
+        #'all_timezone': pytz_demo.findAlltz()
     })
     #return HttpResponse("hello world")
 
