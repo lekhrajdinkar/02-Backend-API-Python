@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'user_profile_app',
+    'timezone_api',
 ]
 
 MIDDLEWARE = [
