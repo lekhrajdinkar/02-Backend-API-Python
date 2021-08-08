@@ -6,15 +6,25 @@
 6. better way to create requirments.txt and list down 3rd party lin
 7. add runtime.txt with python version
 ---
-#Django
-1. pip install django --> it dowload from pypi.org
-2. pip install -r requirments.txt (add django, rest,etc)
-3. `django-admin.py startproject <project-name> .`
-4. it will also add manange.py for rest of the project schmatics things
+##Django
+1. `pip` install django --> it dowload from pypi.org
+2. pip install -r `requirments.txt `(add django, rest,etc)
+3. `django-admin.py startproject` <project-name> .
+4. it will also add `manange`.py for rest of the project schmatics things
 5. add apps/subproject : `python manage.py startapp <app-1>`
-6. it will add new project with add-1.
-7. add entry in setting.py for newly added 
-
+6. it will add new app/folder with add-1.
+7. add entry in `setting.py` for newly added 
+---
+###Add admin user
+1. python manage.py `migrate`
+2. python manage.py `createsuperuser`
 
 ---
+###migration
+1. create model ingeri from models.model
+2. python manage.py `makemigrations`  app-1
+3. python manage.py migrate [app-1]
+
+---
+###useful limks
 https://pypi.org/project/djangorestframework/
