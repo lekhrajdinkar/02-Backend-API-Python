@@ -26,5 +26,15 @@
 3. python manage.py migrate [app-1]
 
 ---
-###useful limks
-https://pypi.org/project/djangorestframework/
+###useful links
+- https://pypi.org/project/djangorestframework/
+---
+##API
+###A. APIView
+- get,put,post,patch,delete method
+- 
+###B. View Set
+- good to perform CRUD wih database backend
+- list,retrive,update,destroy,etc
+---
+
