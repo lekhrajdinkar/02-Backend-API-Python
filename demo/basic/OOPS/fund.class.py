@@ -4,19 +4,25 @@ a,b=2,4;  c=a+b #  + is def __add__
 
 class Fund:
     category = 'AM'
-    self = None
+    self = None # treated as class Attribute
+    # 1. new create instance
+    # def __new__(cls, *args, **kwargs): pass
+
+    # 2. init just customze instance
     def __init__(self, name, number, share=10):
         pass
 
+    # 3. like java, cannot ommit self keyword, no shorthand
+
     def __init__(self, name, number, share=10):
-        #self = None
+        #self = None # 4. It will set instance to None
         self.name = name
         self.number = number
         self.active=False
         self.share=share
         # self.new
         print('&&&&&&&&&&&& COndtructor :: ' , self)
-        # return self
+        # 3. return self - cannot return from __init
 
     # order matte, second occurance will override above defination
     # def __init__(self, name, number, share=10):
